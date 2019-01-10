@@ -20,15 +20,19 @@
  			B.writedate,
  			(SELECT count(*) FROM material
  			WHERE noticeno = B.noticeno)filesCnt
- 		FROM(
- 			SELECT rownum rnum, A.*
+ 		FROM
+ 			(
+ 			SELECT @rownum:=@rownum+1 as rnum, A.*
  			FROM(
  				SELECT * FROM notice
  				ORDER BY noticeno DESC
  			)A 
+ 			where (@rownum:=0)=0
  			ORDER BY rnum
  		)B
- 		WHERE B.rnum BETWEEN #{startNo} AND #{endNo}
+ 		ORDER BY B.noticeno DESC
+ 		limit #{startNo}, #{endNo}
+ 		
  	</select>
  	<update id="hit" parameterType="winwin.dto.NoticeBoard">
  		UPDATE notice SET hit = hit+1

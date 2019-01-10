@@ -21,6 +21,8 @@ public class NoticeBoardServiceImpl implements NoticeBoardService{
 	}
 	@Override
 	public List<NoticeBoard> list(Paging paging) {
+		int startNo = paging.getStartNo() -1;
+		paging.setStartNo(startNo);
 		return dao.list(paging);
 	}
 	@Override

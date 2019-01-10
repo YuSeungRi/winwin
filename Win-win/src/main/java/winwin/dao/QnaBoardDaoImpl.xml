@@ -27,11 +27,12 @@
  			 FROM qna_comment
  			 WHERE qnano=B.qnaNo) commentCnt
  		FROM (
- 			SELECT rownum rnum, A.*
+ 			SELECT @rownum:=@rownum+1 rnum, A.*
  			FROM(
  				SELECT * FROM qna
  				ORDER BY qnano DESC
  			)A
+ 			where (@rownum:=0)=0
  			ORDER BY rnum
  		)B
  		WHERE B.rnum BETWEEN #{startNo} AND #{endNo}
