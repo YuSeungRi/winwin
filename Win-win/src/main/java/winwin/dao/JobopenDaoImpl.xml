@@ -29,16 +29,30 @@
   	
   	
   	<select id="selectBasic" resultType="winwin.dto.JobopenBasic" parameterType="winwin.util.Paging">
-		SELECT *  FROM (
-		
-     		SELECT ROWNUM RN, A.* FROM (    
-        		select * from
-        		(select j.title, count(s.userid) as applicantCnt
-            	from jobopenbasic j LEFT JOIN support s 
-            	ON s.jobopenno = j.jobopenno
-            	group by j.title) R LEFT JOIN jobopenBasic O
-        	ON R.title = O.title
-        order by jobopenNo desc) A 
+		SELECT 
+			*  
+		FROM 
+			(		
+				SELECT 
+				@rownum:=@rownum+1 as RN, 
+		   		A.* 
+		FROM 
+			(    
+				select 
+					* 
+				from
+					(
+						select 
+							j.title as jobTitle, 
+							count(s.userid) as applicantCnt
+						from 
+							jobopenbasic j LEFT JOIN support s 
+						ON s.jobopenno = j.jobopenno
+						group by j.title) R 
+				LEFT JOIN jobopenBasic O
+				ON jobTitle = O.title
+		where (@rownum:=0)=0
+		order by jobopenNo desc) A  
     
     <if test="status=='전체 확인'">
     	where display=1
@@ -49,7 +63,7 @@
 	<if test="status=='메인'">
 		where status in ('채용 중', '결과 발표') and display=1
 	</if>
-	) WHERE RN BETWEEN #{startNo} AND #{endNo}
+	) B WHERE RN BETWEEN #{startNo} AND #{endNo}
   	</select>
   	
   	

@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.format.annotation.DateTimeFormat;
 
 public class JobopenBasic {
+	private int RN;
 	private int jobopenNo; // idx
 	private String title; // 공고제목
 	private String offer; // 신입 or 경력
@@ -40,8 +41,19 @@ public class JobopenBasic {
 				+ ", lang=" + lang + ", etcQual=" + etcQual + ", etc=" + etc + ", writeDate=" + writeDate + ", hit="
 				+ hit + ", display=" + display + ", status=" + status + ", applicantCnt=" + applicantCnt + "]";
 	}
-
 	
+	
+
+	public int getRN() {
+		return RN;
+	}
+
+	public void setRN(int rN) {
+		RN = rN;
+	}
+
+
+
 	public int getJobopenNo() {
 		return jobopenNo;
 	}

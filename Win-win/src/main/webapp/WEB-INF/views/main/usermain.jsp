@@ -57,7 +57,7 @@
 		  <tbody>
 			<c:forEach items="${list }" var="JobopenBasic">
 			<tr>
-				<td>${JobopenBasic.jobopenNo }</td>
+				<td>${JobopenBasic.RN }</td>
 				<td>${JobopenBasic.offer }</td>
 				<td><a href="/jobOpen/view?boardNo=${JobopenBasic.jobopenNo}" style="text-decoration: none;">${JobopenBasic.title }</a></td>
 				<td>
