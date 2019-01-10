@@ -6,10 +6,10 @@
   
   <mapper namespace="winwin.dao.AdminDao">
  	 <select id="adminlogin" parameterType="winwin.dto.Admin" resultType="int" >
-		select count(*) from "ADMIN" where adminCode=#{adminCode }
+		select count(*) from ADMINI where adminCode=#{adminCode }
 	</select>
 	
 	<select id="adminInfo" resultType="winwin.dto.Admin">
-		select * from "ADMIN" where adminCode=#{adminCode }
+		select * from ADMINI where adminCode=#{adminCode }
 	</select>
   </mapper>
