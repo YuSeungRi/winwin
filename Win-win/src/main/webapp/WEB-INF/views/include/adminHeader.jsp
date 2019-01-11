@@ -16,9 +16,9 @@
 		<p class="font-weight-bold h1"><a href="/main/adminmain" style="color:black; text-decoration: none">WIN-WIN</a></p>
 		
 		<ul class="nav justify-content-end mb-2" >	
-		  <li class="nav-item">
-		    <div class="font-weight-bold ml-3" style="cursor: pointer"><a href="/support/list" style="text-decoration: none; color: black;">지원현황</a></div>
-		  </li>
+<!-- 		  <li class="nav-item"> -->
+<!-- 		    <div class="font-weight-bold ml-3" style="cursor: pointer"><a href="/support/list" style="text-decoration: none; color: black;">지원현황</a></div> -->
+<!-- 		  </li> -->
 		  <li class="nav-item">
 		    <div class="font-weight-bold ml-3" style="cursor: pointer"><a href="/admin/chart" style="text-decoration: none; color: black;">통계관리</a></div>
 		  </li>

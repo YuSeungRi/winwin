@@ -12,42 +12,42 @@
   
   	<insert id="insertLanguage" parameterType="winwin.dto.Language">
   		INSERT INTO language(languageNo, userId, jobopenNo, lName, grade, testName, score, lDate, lOrgan)
-  		VALUES(LANGUAGE_SEQ.NEXTVAL, #{userId }, #{jobopenNo }, '영어', #{grade }, #{testName }, #{score }, #{lDate }, #{lOrgan })
+  		VALUES(default, #{userId }, #{jobopenNo }, '영어', #{grade }, #{testName }, #{score }, #{lDate }, #{lOrgan })
   	</insert>
   	
   	<insert id="insertLicense" parameterType="winwin.dto.License">
   		INSERT INTO license(licenseNo, userId, jobopenNo, liName, liDate, liOrgan)
-  		VALUES(LICENSE_SEQ.NEXTVAL, #{userId }, #{jobopenNo }, #{liName }, #{liDate }, #{liOrgan })
+  		VALUES(default, #{userId }, #{jobopenNo }, #{liName }, #{liDate }, #{liOrgan })
   	</insert>
   	
   	<insert id="insertCareer" parameterType="winwin.dto.Career">
   		INSERT INTO career(careerNo, userId, jobopenNo, cStartDate, cEndDate, cName, position, task, salary, cContent)
-  		VALUES(CAREER_SEQ.NEXTVAL, #{userId }, #{jobopenNo }, #{cStartDate }, #{cEndDate }, #{cName }, #{position }, #{task }, #{salary }, #{cContent })
+  		VALUES(default, #{userId }, #{jobopenNo }, #{cStartDate }, #{cEndDate }, #{cName }, #{position }, #{task }, #{salary }, #{cContent })
   	</insert>
   	
   	<insert id="insertActivity" parameterType="winwin.dto.Activity">
   		INSERT INTO activity(activityNo, userId, jobopenNo, aName, aStartDate, aEndDate, aContent)
-  		VALUES(ACTIVITY_SEQ.NEXTVAL, #{userId }, #{jobopenNo }, #{aName }, #{aStartDate }, #{aEndDate }, #{aContent })
+  		VALUES(default, #{userId }, #{jobopenNo }, #{aName }, #{aStartDate }, #{aEndDate }, #{aContent })
   	</insert>
   	
   	<insert id="insertExperience" parameterType="winwin.dto.Experience">
   		INSERT INTO experience(experienceNo, userId, jobopenNo, eOption, eOrgan, eStartDate, eEndDate, eContent)
-  		VALUES(EXPERIENCE_SEQ.NEXTVAL, #{userId }, #{jobopenNo }, #{eOption }, #{eOrgan }, #{eStartDate }, #{eEndDate }, #{eContent })
+  		VALUES(default, #{userId }, #{jobopenNo }, #{eOption }, #{eOrgan }, #{eStartDate }, #{eEndDate }, #{eContent })
   	</insert>
   	
   	<insert id="insertMaterial" parameterType="winwin.dto.Material">
   		INSERT INTO material(fileNo, userId, portfolioId, originName, storedName, writedate, filesize)
-  		VALUES(MATERIAL_SEQ.NEXTVAL, #{userId }, #{portfolioId }, #{originName }, #{storedName }, #{writedate }, #{filesize })
+  		VALUES(default, #{userId }, #{portfolioId }, #{originName }, #{storedName }, #{writedate }, #{filesize })
   	</insert>
   	
   	<insert id="insertIntroduce" parameterType="winwin.dto.Introduce">
   		INSERT INTO introduce(introduceNo, userId, jobopenNo, content1, content2, content3, content4, content5)
-  		VALUES(INTRODUCE_SEQ.NEXTVAL, #{userId }, #{jobopenNo }, #{content1 }, #{content2 }, #{content3 }, #{content4 }, #{content5 })
+  		VALUES(default, #{userId }, #{jobopenNo }, #{content1 }, #{content2 }, #{content3 }, #{content4 }, #{content5 })
   	</insert>  	
   	
   	<insert id="insertSupport" parameterType="winwin.dto.Support">
   		INSERT INTO support(passNO, jobopenNo, userId)
-  		VALUES(SUPPORT_SEQ.NEXTVAL,  #{jobopenNo }, #{userId })
+  		VALUES(default,  #{jobopenNo }, #{userId })
   	</insert>
   	
   	
@@ -137,7 +137,7 @@
   	
 	<insert id="fileUpload" parameterType="winwin.dto.Material">
 		INSERT INTO material( FILENO, USERID, PORTFOLIOID, ORIGINNAME, STOREDNAME, WRITEDATE, FILESIZE) 
-		VALUES (material_SEQ.nextval, #{userId}, #{portfolioId}, #{originName}, #{storedName}, sysdate, #{filesize})
+		VALUES (default, #{userId}, #{portfolioId}, #{originName}, #{storedName}, sysdate, #{filesize})
 	</insert>
 	
   	<select id="countIntro" parameterType="winwin.dto.Introduce" resultType="int">

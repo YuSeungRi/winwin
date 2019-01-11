@@ -61,7 +61,7 @@
  	</select>
  	<insert id="write" parameterType="winwin.dto.QnaBoard">
  		INSERT INTO qna(qnano,title,userid,writer,pw,content,hit,writedate)
- 		VALUES (qna_seq.nextval,#{title},#{userId},#{writer},#{pw},#{content},default,default)	
+ 		VALUES (default,#{title},#{userId},#{writer},#{pw},#{content},default,default)	
  	</insert>
  	<delete id="deleteBoard" parameterType="winwin.dto.QnaBoard">
 		DELETE FROM qna
@@ -89,7 +89,7 @@
  	</update>
  	<insert id="insertComment" parameterType="winwin.dto.QnaComment">
  		INSERT INTO qna_comment
- 		VALUES(qna_comment_seq.nextval,#{qnaNo},#{writer},#{id},#{content},default) 		
+ 		VALUES(default,#{qnaNo},#{writer},#{id},#{content},default) 		
  	</insert>
  	<delete id="deleteComment" parameterType="winwin.dto.QnaComment">
  		DELETE FROM qna_comment

@@ -42,8 +42,8 @@ h6 {
 }
 
 .box1 {
-  height: 280px;
-  border-bottom: 1px solid lightgrey;
+  height: 600px;
+/*   border-bottom: 1px solid lightgrey; */
   border-right: 1px solid lightgrey;
 }
 
@@ -87,7 +87,7 @@ h6 {
 			</div>
 			<div class="underline mt-1" ></div>
 			<ul class="mt-3">
-				<c:forEach items="${applylist }" var="JobopenBasic" begin="0" end="4">
+				<c:forEach items="${applylist }" var="JobopenBasic" begin="0" end="9">
 					<li class="mb-3" ><a href="/jobOpen/view?boardNo=${JobopenBasic.jobopenNo}">${JobopenBasic.title}</a></li>
 				</c:forEach>
 			</ul>
@@ -104,7 +104,7 @@ h6 {
 			</div>
 			<div class="underline mt-1" ></div>
 			<ul class="mt-3">
-				<c:forEach items="${noticelist }" var="NoticeBoard" begin="0" end="4">
+				<c:forEach items="${noticelist }" var="NoticeBoard" begin="0" end="9">
 					<li class="mb-3" ><a href="/notice/view?noticeno=${NoticeBoard.noticeno}">${NoticeBoard.title}</a></li>
 				</c:forEach>
 			</ul>
@@ -142,46 +142,46 @@ h6 {
 		</div>
 	</div>
 	
-	<div class="row">
+<!-- 	<div class="row"> -->
 		
-		<div class="box2 col-4">
-			<div class="row">
-				<div class="col-6">
-					<h6 class="font-weight-bold mt-3  ml-2"><a href="/admin/chart">통계관리</a></h6>
-				</div>
-				<div class="col-6 text-right">
-					<p class="viewmore badge badge-pill font-weight-bold badge-light mt-3"><a href="/admin/chart">더보기 ></a></p>
-				</div>
-			</div>
-			<div class="underline mt-1"></div>
+<!-- 		<div class="box2 col-4"> -->
+<!-- 			<div class="row"> -->
+<!-- 				<div class="col-6"> -->
+<!-- 					<h6 class="font-weight-bold mt-3  ml-2"><a href="/admin/chart">통계관리</a></h6> -->
+<!-- 				</div> -->
+<!-- 				<div class="col-6 text-right"> -->
+<!-- 					<p class="viewmore badge badge-pill font-weight-bold badge-light mt-3"><a href="/admin/chart">더보기 ></a></p> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
+<!-- 			<div class="underline mt-1"></div> -->
 			
-			<div id="theother_chart_div"></div>
+<!-- 			<div id="theother_chart_div"></div> -->
 			
-		</div>
+<!-- 		</div> -->
 		
-		<div class="box2 col-4">
-			<div class="row">
-				<div class="col-6">
-					<h6 class="font-weight-bold mt-3  ml-2"><a href="/qna/list">문의사항</a></h6>
-				</div>
-				<div class="col-6 text-right">
-					<p class="viewmore badge badge-pill font-weight-bold badge-light mt-3"><a href="/qna/list">더보기 ></a></p>
-				</div>
-			</div>
-			<div class="underline mt-1"></div>
-			<ul class="mt-3">
-				<c:forEach items="${qnalist }" var="QnaBoard" begin="0" end="4">
-					<li class="mb-3" ><a href="/qna/view?qnaNo=${QnaBoard.qnaNo}">${QnaBoard.title}</a></li>
-				</c:forEach>
-			</ul>
-		</div>
+<!-- 		<div class="box2 col-4"> -->
+<!-- 			<div class="row"> -->
+<!-- 				<div class="col-6"> -->
+<!-- 					<h6 class="font-weight-bold mt-3  ml-2"><a href="/qna/list">문의사항</a></h6> -->
+<!-- 				</div> -->
+<!-- 				<div class="col-6 text-right"> -->
+<!-- 					<p class="viewmore badge badge-pill font-weight-bold badge-light mt-3"><a href="/qna/list">더보기 ></a></p> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
+<!-- 			<div class="underline mt-1"></div> -->
+<!-- 			<ul class="mt-3"> -->
+<%-- 				<c:forEach items="${qnalist }" var="QnaBoard" begin="0" end="4"> --%>
+<%-- 					<li class="mb-3" ><a href="/qna/view?qnaNo=${QnaBoard.qnaNo}">${QnaBoard.title}</a></li> --%>
+<%-- 				</c:forEach> --%>
+<!-- 			</ul> -->
+<!-- 		</div> -->
 		
-		<div class="col-4 text-center mt-5">
-			<div class="mt-3"></div>
-			<div class="font-weight-bold" style="font-size: 14px;">답변이 완료되지 않은 문의사항</div>
-			<h3 class="mt-3"><strong>${commentCnt} 개 </strong></h3>
-			<a href="/qna/list"><button type="button" class="btn btn-secondary font-weight-bold btn-sm mt-2" style="width: 300px">문의사항 바로가기</button></a>
-		</div>
+<!-- 		<div class="col-4 text-center mt-5"> -->
+<!-- 			<div class="mt-3"></div> -->
+<!-- 			<div class="font-weight-bold" style="font-size: 14px;">답변이 완료되지 않은 문의사항</div> -->
+<%-- 			<h3 class="mt-3"><strong>${commentCnt} 개 </strong></h3> --%>
+<!-- 			<a href="/qna/list"><button type="button" class="btn btn-secondary font-weight-bold btn-sm mt-2" style="width: 300px">문의사항 바로가기</button></a> -->
+<!-- 		</div> -->
 	</div>
 </div>
 

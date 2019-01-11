@@ -83,7 +83,7 @@
  			material	
  		VALUES
  			(
- 			material_seq.nextval,
+ 			default,
  			null,
  			#{adminCode},
  			#{noticeNo},

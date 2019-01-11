@@ -12,6 +12,7 @@
 	    <c:if test="${empty login }">
 		<div class="text-right">
 			<a href="/user/login"><span class="badge badge-pill badge-primary mt-3 " style="background-color: #376092">로그인</span></a>
+			<a href="/admin/adminLogin"><span class="badge badge-pill badge-secondary mt-3 ">관리자 로그인</span></a>
 			<a href="/user/join"><span class="badge badge-pill badge-primary mt-3" style="background-color: #376092">회원가입</span></a>
 		</div>
 		</c:if>
