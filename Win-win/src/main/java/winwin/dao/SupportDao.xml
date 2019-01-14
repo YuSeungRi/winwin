@@ -27,9 +27,9 @@
 	</resultMap>
  	
  	   <select id="list" resultMap="Support" parameterType="map">
-       SELECT * FROM ( SELECT rownum rnum, T.* FROM(
+       SELECT * FROM ( SELECT @rownum:=@rownum+1 as rnum, T.* FROM(
        <include refid="selectSupportBoard"/>
-       ) T ORDER BY supportDate DESC ) R WHERE R.rnum BETWEEN #{startNo} AND #{endNo} ORDER BY rnum
+       ) T ORDER BY supportDate DESC ) R where (@rownum:=0)=0 and R.rnum BETWEEN #{startNo} AND #{endNo} ORDER BY rnum
     </select>
     
     <sql id="selectSupportBoard">
@@ -147,10 +147,9 @@
 	
 	<select id="resultlist" resultMap="Result"
 		parameterType="map">
-		SELECT * FROM ( SELECT rownum rnum, T.* FROM(
+		SELECT * FROM ( SELECT @rownum:=@rownum+1 as rnum, T.* FROM(
 		<include refid="selectResultBoard" />
-		) T ORDER BY supportDate DESC ) R WHERE R.rnum BETWEEN #{startNo} AND
-		#{endNo} ORDER BY rnum
+		) T ORDER BY supportDate DESC ) R where (@rownum:=0)=0 limit #{startNo}, #{endNo}
 	</select>
 
 	<select id="resultCnt" resultType="int">
