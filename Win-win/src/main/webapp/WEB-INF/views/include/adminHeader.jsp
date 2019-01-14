@@ -31,9 +31,9 @@
 		  <li class="nav-item">
 		    <div class="font-weight-bold ml-3" style="cursor: pointer"><a href="/jobOpen/manage" style="text-decoration: none; color: black;">채용공고관리</a></div>
 		  </li>
-		  <li class="nav-item">
-		    <div class="font-weight-bold ml-3" style="cursor: pointer"><a href="/qna/list" style="text-decoration: none; color: black;">문의사항관리</a></div>
-		  </li>
+<!-- 		  <li class="nav-item"> -->
+<!-- 		    <div class="font-weight-bold ml-3" style="cursor: pointer"><a href="/qna/list" style="text-decoration: none; color: black;">문의사항관리</a></div> -->
+<!-- 		  </li> -->
 		</ul>
 		
 		<div style="height:5px; background-color: #376092" ></div>

@@ -22,22 +22,22 @@
 	<div style="height: 100px"></div>
 	<h4 class="text-center font-weight-bold">WINWIN은 <span style="color: #008CBA">임직원</span>의 <span style="color: #008CBA">꿈</span>이 실현되는 소중한 공간을 만들어갑니다.</h4>
 	
-	<div class="mt-5 text-center">
-		<img src="/resources/image/linkbar.PNG" width="708"/>
-	</div>
+<!-- 	<div class="mt-5 text-center"> -->
+<!-- 		<img src="/resources/image/linkbar.PNG" width="708"/> -->
+<!-- 	</div> -->
 
-	<div class="text-center mt-3">
+	<div class="text-center mt-5">
 		<a class="a" href="/notice/list"><i class="fas fa-bullhorn fa-2x ml-5 mr-5 pl-4 pr-4"></i></a>
 		<a class="a" href="/applyMenu/selectApply"><i class="far fa-edit fa-2x ml-5 mr-5 pl-4 pr-4"></i></a>		
 		<a class="a" href="/applyMenu/passfail"><i class="far fa-check-square fa-2x ml-5 mr-5 pl-4 pr-4"></i></a>
-		<a class="a" href="/qna/list"><i class="far fa-question-circle fa-2x ml-5 mr-5 pl-4 pr-4"></i></a>
+<!-- 		<a class="a" href="/qna/list"><i class="far fa-question-circle fa-2x ml-5 mr-5 pl-4 pr-4"></i></a> -->
 	</div>
 	
 	<div class="text-center mt-2">
 		<span class="title ml-5 mr-5 pl-3 pr-2 font-weight-bold"><a class="a" href="/notice/list">공지사항</a></span>
 		<span class="title ml-5 mr-5 pl-3 pr-2 font-weight-bold"><a class="a" href="/applyMenu/selectApply">입사지원</a></span>		
 		<span class="title ml-5 mr-5 pl-3 pr-2 font-weight-bold"><a class="a" href="/applyMenu/passfail">결과확인</a></span>
-		<span class="title ml-5 mr-5 pl-3 pr-2 font-weight-bold"><a class="a" href="/qna/list">채용문의</a></span>
+<!-- 		<span class="title ml-5 mr-5 pl-3 pr-2 font-weight-bold"><a class="a" href="/qna/list">채용문의</a></span> -->
 	</div>
 	
 	<hr class="mt-5" style="height:1px; width:750px; background-color: lightgray">

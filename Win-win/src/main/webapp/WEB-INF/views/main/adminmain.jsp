@@ -88,7 +88,7 @@ h6 {
 			<div class="underline mt-1" ></div>
 			<ul class="mt-3">
 				<c:forEach items="${applylist }" var="JobopenBasic" begin="0" end="9">
-					<li class="mb-3" ><a href="/jobOpen/view?boardNo=${JobopenBasic.jobopenNo}">${JobopenBasic.title}</a></li>
+					<li class="mb-3" style="font-size: 13px;"><a href="/jobOpen/view?boardNo=${JobopenBasic.jobopenNo}">${JobopenBasic.title}</a></li>
 				</c:forEach>
 			</ul>
 		</div>
@@ -105,7 +105,7 @@ h6 {
 			<div class="underline mt-1" ></div>
 			<ul class="mt-3">
 				<c:forEach items="${noticelist }" var="NoticeBoard" begin="0" end="9">
-					<li class="mb-3" ><a href="/notice/view?noticeno=${NoticeBoard.noticeno}">${NoticeBoard.title}</a></li>
+					<li class="mb-3" style="font-size: 13px;" ><a href="/notice/view?noticeno=${NoticeBoard.noticeno}">${NoticeBoard.title}</a></li>
 				</c:forEach>
 			</ul>
 		</div>
