@@ -142,7 +142,7 @@
 								style="width: 18px; height: 18px;" class="align-middle"></th>
 							<th class="text-center">번호</th>
 							<th class="text-center">공 고 명</th>
-							<th class="text-center">직무</th>
+							<th class="text-center">부서</th>
 							<th class="text-center">지원 일자</th>
 							<th class="text-center">지원자</th>
 							<th class="text-center">처리 상태</th>

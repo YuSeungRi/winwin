@@ -725,128 +725,128 @@ function paging (page, limit, totalCount, pageCount, callback) {
 	<div class="container">
 		<div class="row">
 			<div class="col-12 mt-5">
-				<p class="font-weight-bold h3">입사지원 현황</p>
+				<p class="font-weight-bold h3">지원현황</p>
 				<hr style="border: solid #376092;">
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-12 mt-5">
+<!-- 		<div class="row"> -->
+<!-- 			<div class="col-12 mt-5"> -->
 
-				<table class="table table-bordered">
-					<thead style="background-color: #eee;">
-						<tr>
-							<th class="text-center">경력</th>
-							<th class="text-center">고용형태</th>
-							<th class="text-center">학력</th>
-							<th class="text-center">대학 학점</th>
-							<th class="text-center">TOEIC</th>
-							<th class="text-center">처리상태</th>
+<!-- 				<table class="table table-bordered"> -->
+<!-- 					<thead style="background-color: #eee;"> -->
+<!-- 						<tr> -->
+<!-- 							<th class="text-center">경력</th> -->
+<!-- 							<th class="text-center">고용형태</th> -->
+<!-- 							<th class="text-center">학력</th> -->
+<!-- 							<th class="text-center">대학 학점</th> -->
+<!-- 							<th class="text-center">TOEIC</th> -->
+<!-- 							<th class="text-center">처리상태</th> -->
 
-						</tr>
-					</thead>
+<!-- 						</tr> -->
+<!-- 					</thead> -->
 
-					<tbody id="test">
-						<tr>
-							<td class="text-center" style="width: 12%"><select multiple
-								class="form-control searchSelect" id="career" forId="careerbox"
-								form="search" name="career">
-									<option value="신입">신입</option>
-									<option value="경력">경력</option>
-							</select></td>
-							<td class="text-center" style="width: 16%"><select multiple
-								class="form-control searchSelect" id="employment"
-								forId="employmentbox" form="search" name="employment">
-									<option value="정규직">정규직</option>
-									<option value="계약직">계약직</option>
-									<option value="인턴">인턴</option>
-									<option value="병역특례">병역특례</option>
-							</select></td>
-							<td class="text-center" style="width: 25%"><select multiple
-								class="form-control searchSelect" id="academiccareer"
-								forId="academiccareerbox" form="search" name="academiccareer">
-									<option value="대학교졸업(4년)">대학교졸업(4년)</option>
-									<option value="대학교졸업(2~3년)">대학교졸업(2~3년)</option>
-									<option value="석사 이상">석사 이상</option>
-									<option value="고등학교 졸업">고등학교 졸업</option>
-									<option value="학력 무관">학력 무관</option>
-							</select></td>
-							<td class="text-center" style="width: 10%"><select multiple
-								class="form-control searchSelect" id="credit" forId="creditbox"
-								form="search" name="credit">
-									<option value="2.0">2.0 이상</option>
-									<option value="2.5">2.5 이상</option>
-									<option value="3.0">3.0 이상</option>
-									<option value="3.5">3.5 이상</option>
-									<option value="4.0">4.0 이상</option>
-							</select></td>
-							<td class="text-center" style="width: 15%"><select multiple
-								class="form-control searchSelect" id="language"
-								forId="languagebox" form="search" name="language">
-									<option value="500">500이상</option>
-									<option value="600">600이상</option>
-									<option value="700">700이상</option>
-									<option value="800">800이상</option>
-									<option value="850">850이상</option>
-									<option value="900">900 이상</option>
-									<option value="950">950 이상</option>
-							</select></td>
-							<td class="text-center" style="width: 10%"><select multiple
-								class="form-control searchSelect" forId="statusbox" id="status"
-								form="search" name="status">
-									<option value="처리 전">처리 전</option>
-									<option value="처리 후">처리 후</option>
-							</select></td>
-						</tr>
+<!-- 					<tbody id="test"> -->
+<!-- 						<tr> -->
+<!-- 							<td class="text-center" style="width: 12%"><select multiple -->
+<!-- 								class="form-control searchSelect" id="career" forId="careerbox" -->
+<!-- 								form="search" name="career"> -->
+<!-- 									<option value="신입">신입</option> -->
+<!-- 									<option value="경력">경력</option> -->
+<!-- 							</select></td> -->
+<!-- 							<td class="text-center" style="width: 16%"><select multiple -->
+<!-- 								class="form-control searchSelect" id="employment" -->
+<!-- 								forId="employmentbox" form="search" name="employment"> -->
+<!-- 									<option value="정규직">정규직</option> -->
+<!-- 									<option value="계약직">계약직</option> -->
+<!-- 									<option value="인턴">인턴</option> -->
+<!-- 									<option value="병역특례">병역특례</option> -->
+<!-- 							</select></td> -->
+<!-- 							<td class="text-center" style="width: 25%"><select multiple -->
+<!-- 								class="form-control searchSelect" id="academiccareer" -->
+<!-- 								forId="academiccareerbox" form="search" name="academiccareer"> -->
+<!-- 									<option value="대학교졸업(4년)">대학교졸업(4년)</option> -->
+<!-- 									<option value="대학교졸업(2~3년)">대학교졸업(2~3년)</option> -->
+<!-- 									<option value="석사 이상">석사 이상</option> -->
+<!-- 									<option value="고등학교 졸업">고등학교 졸업</option> -->
+<!-- 									<option value="학력 무관">학력 무관</option> -->
+<!-- 							</select></td> -->
+<!-- 							<td class="text-center" style="width: 10%"><select multiple -->
+<!-- 								class="form-control searchSelect" id="credit" forId="creditbox" -->
+<!-- 								form="search" name="credit"> -->
+<!-- 									<option value="2.0">2.0 이상</option> -->
+<!-- 									<option value="2.5">2.5 이상</option> -->
+<!-- 									<option value="3.0">3.0 이상</option> -->
+<!-- 									<option value="3.5">3.5 이상</option> -->
+<!-- 									<option value="4.0">4.0 이상</option> -->
+<!-- 							</select></td> -->
+<!-- 							<td class="text-center" style="width: 15%"><select multiple -->
+<!-- 								class="form-control searchSelect" id="language" -->
+<!-- 								forId="languagebox" form="search" name="language"> -->
+<!-- 									<option value="500">500이상</option> -->
+<!-- 									<option value="600">600이상</option> -->
+<!-- 									<option value="700">700이상</option> -->
+<!-- 									<option value="800">800이상</option> -->
+<!-- 									<option value="850">850이상</option> -->
+<!-- 									<option value="900">900 이상</option> -->
+<!-- 									<option value="950">950 이상</option> -->
+<!-- 							</select></td> -->
+<!-- 							<td class="text-center" style="width: 10%"><select multiple -->
+<!-- 								class="form-control searchSelect" forId="statusbox" id="status" -->
+<!-- 								form="search" name="status"> -->
+<!-- 									<option value="처리 전">처리 전</option> -->
+<!-- 									<option value="처리 후">처리 후</option> -->
+<!-- 							</select></td> -->
+<!-- 						</tr> -->
 
 
-						<tr>
-							<th class="text-center" colspan="1"
-								style="background-color: #eee; padding: 0px; line-height: 2.5;">
-								공고명</th>
-							<td colspan="7"><select class="custom-select"
-								style="width: 457px;" id="title" name="title" form="search">
-									<option value="0" style="width: 457px">공고명을 선택해 주십시오!</option>
-									<c:forEach items="${title }" var="job">
-										<option value="${job.title }">${job.title }</option>
-									</c:forEach>
-							</select></td>
-						</tr>
-						<tr>
-							<td colspan="8" style="height: 90px">
-								<div class="row">
-									<div class="col-10">
-										<div class="box text-center remove-class" forId="career" id=careerbox
-											style="width: 8em;"></div>
-										<div class="box text-center remove-class" forId="employment" id=employmentbox
-											style="width: 7em;"></div>
-										<div class="box text-center remove-class" forId="academiccareer" id=academiccareerbox
-											style="width: 14em;"></div>
-										<div class="box text-center remove-class" forId="credit" id=creditbox
-											style="width: 8em;"></div>
-										<div class="box text-center remove-class" forId="language" id=languagebox
-											style="width: 10em;"></div>
-										<div class="box text-center remove-class" forId="status" id=statusbox
-											style="width: 6em;"></div>
-									</div>
-									<div class="col-2 mt-2">
-										<button
-											class="btn float-right btn-sm btn-primary fas fa-redo	"
-											style="margin-right: 15px" id="clear">&nbsp; 초기화</button>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-12 d-flex justify-content-end mt-1">
-										<button class="btn float-right btn-primary" style="margin-right: 15px;" id="search">선택된 조건 검색하기</button>
-									</div>
-								</div>
+<!-- 						<tr> -->
+<!-- 							<th class="text-center" colspan="1" -->
+<!-- 								style="background-color: #eee; padding: 0px; line-height: 2.5;"> -->
+<!-- 								공고명</th> -->
+<!-- 							<td colspan="7"><select class="custom-select" -->
+<!-- 								style="width: 457px;" id="title" name="title" form="search"> -->
+<!-- 									<option value="0" style="width: 457px">공고명을 선택해 주십시오!</option> -->
+<%-- 									<c:forEach items="${title }" var="job"> --%>
+<%-- 										<option value="${job.title }">${job.title }</option> --%>
+<%-- 									</c:forEach> --%>
+<!-- 							</select></td> -->
+<!-- 						</tr> -->
+<!-- 						<tr> -->
+<!-- 							<td colspan="8" style="height: 90px"> -->
+<!-- 								<div class="row"> -->
+<!-- 									<div class="col-10"> -->
+<!-- 										<div class="box text-center remove-class" forId="career" id=careerbox -->
+<!-- 											style="width: 8em;"></div> -->
+<!-- 										<div class="box text-center remove-class" forId="employment" id=employmentbox -->
+<!-- 											style="width: 7em;"></div> -->
+<!-- 										<div class="box text-center remove-class" forId="academiccareer" id=academiccareerbox -->
+<!-- 											style="width: 14em;"></div> -->
+<!-- 										<div class="box text-center remove-class" forId="credit" id=creditbox -->
+<!-- 											style="width: 8em;"></div> -->
+<!-- 										<div class="box text-center remove-class" forId="language" id=languagebox -->
+<!-- 											style="width: 10em;"></div> -->
+<!-- 										<div class="box text-center remove-class" forId="status" id=statusbox -->
+<!-- 											style="width: 6em;"></div> -->
+<!-- 									</div> -->
+<!-- 									<div class="col-2 mt-2"> -->
+<!-- 										<button -->
+<!-- 											class="btn float-right btn-sm btn-primary fas fa-redo	" -->
+<!-- 											style="margin-right: 15px" id="clear">&nbsp; 초기화</button> -->
+<!-- 									</div> -->
+<!-- 								</div> -->
+<!-- 								<div class="row"> -->
+<!-- 									<div class="col-12 d-flex justify-content-end mt-1"> -->
+<!-- 										<button class="btn float-right btn-primary" style="margin-right: 15px;" id="search">선택된 조건 검색하기</button> -->
+<!-- 									</div> -->
+<!-- 								</div> -->
 
-							</td>
-						</tr>
-					</tbody>
-				</table>
+<!-- 							</td> -->
+<!-- 						</tr> -->
+<!-- 					</tbody> -->
+<!-- 				</table> -->
 
-			</div>
-		</div>
+<!-- 			</div> -->
+<!-- 		</div> -->
 
 
 		<div class="row">
@@ -856,7 +856,7 @@ function paging (page, limit, totalCount, pageCount, callback) {
 						<tr>
 							<th class="text-center">번호</th>
 							<th class="text-center">공 고 명</th>
-							<th class="text-center">직무</th>
+							<th class="text-center">부서</th>
 							<th class="text-center">지원 일자</th>
 							<th class="text-center">지원자</th>
 							<th class="text-center">포트폴리오</th>

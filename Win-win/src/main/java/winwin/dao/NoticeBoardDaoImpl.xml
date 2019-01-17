@@ -95,8 +95,7 @@
  			)
  	</insert>
  	<select id="getNoticeNo" resultType="int">
-		SELECT notice_seq.nextval
-		FROM dual
+		SELECT MAX(noticeno)+1 FROM notice
  	</select>
  	<select id="getFilesCnt" parameterType="winwin.dto.NoticeBoard" resultType="int">
  		SELECT count(*)

@@ -137,7 +137,7 @@
   	
 	<insert id="fileUpload" parameterType="winwin.dto.Material">
 		INSERT INTO material( FILENO, USERID, PORTFOLIOID, ORIGINNAME, STOREDNAME, WRITEDATE, FILESIZE) 
-		VALUES (default, #{userId}, #{portfolioId}, #{originName}, #{storedName}, sysdate, #{filesize})
+		VALUES (default, #{userId}, #{portfolioId}, #{originName}, #{storedName}, default, #{filesize})
 	</insert>
 	
   	<select id="countIntro" parameterType="winwin.dto.Introduce" resultType="int">

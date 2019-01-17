@@ -29,7 +29,7 @@
  	   <select id="list" resultMap="Support" parameterType="map">
        SELECT * FROM ( SELECT @rownum:=@rownum+1 as rnum, T.* FROM(
        <include refid="selectSupportBoard"/>
-       ) T ORDER BY supportDate DESC ) R where (@rownum:=0)=0 and R.rnum BETWEEN #{startNo} AND #{endNo} ORDER BY rnum
+       ) T ORDER BY supportDate DESC ) R where (@rownum:=0)=0 limit #{startNo}, #{endNo}
     </select>
     
     <sql id="selectSupportBoard">

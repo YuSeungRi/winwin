@@ -215,7 +215,7 @@ td {
 					}	
 					html +='</td>'
 						+'<td>'+item.hit+'</td>'
-						+'<td><strong class="text-success">'+item.applicantCnt+'</strong></td>'
+						+'<td><a href="/support/list?jobopenNo='+item.jobopenNo+'"><strong class="text-success">'+item.applicantCnt+'</strong></a></td>'
 						+'<td>';
 					if(item.status=='채용 중'){
 						html+='<span class="badge badge-pill badge-primary stat font-weight-bold" style="cursor:pointer">'+item.status+'</span>';

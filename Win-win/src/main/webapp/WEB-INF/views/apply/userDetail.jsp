@@ -130,7 +130,7 @@ $(document).ready(function() {
 			alert("장애여부를 입력하세요.");
 			$("#disable").focus();
 		} else if(task == "0") {
-			alert("직무를 선택하세요");
+			alert("지원 부서를 선택하세요");
 			$("#taskSel").focus();
 		} else {
 
@@ -198,10 +198,10 @@ $(document).ready(function() {
 	  <tbody>
 	    <tr>
 	      <td style="font-weight: bold; padding-left: 32px; width: 64%;">${jobopenBasic.title}</td>
-	      <td class="p-0 text-center align-middle bg-secondary" style="width: 14%; font-weight: bold;">지원직무</td>
+	      <td class="p-0 text-center align-middle bg-secondary" style="width: 14%; font-weight: bold;">지원부서</td>
 	      	<td class="text-center align-middle" style="width: 18%;">
 	      		<select style="height:21px; width:90px;" id="taskSel">
-	      			<option value="0">직무선택</option>
+	      			<option value="0">부서선택</option>
 	      			<c:forEach items="${task }" var="task">
 	      				<option value="${task.task }">${task.task }</option>
 	      			</c:forEach>	

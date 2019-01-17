@@ -132,7 +132,7 @@
 								<table class="table table-striped table-bordered table-hover" style="white-space : nowrap">
 									<thead>
 										<tr>
-											<th>모집 부문</th>
+											<th>모집 부서</th>
 											<th>담당 업무</th>
 											<th>근무지</th>
 											<th>모집인원</th>
@@ -221,7 +221,12 @@
 	<div class="d-flex justify-content-center">
 		<div class="col-11 mt-3" style="border-top: 2px solid lightgrey; ">
 	    	<div id="btns" class="form-group d-flex justify-content-center mt-3 mb-2 " style="margin-bottom: 0px;">
+				<c:if test="${adminLogin}">	    	
+				<a href="/jobOpen/manage"><button id="btnList" type="button" class="btn btn-primary btn-sm">목록</button></a>
+				</c:if>
+				<c:if test="${empty adminLogin }">	    	
 				<a href="/jobOpen/list"><button id="btnList" type="button" class="btn btn-primary btn-sm">목록</button></a>
+				</c:if>
 				<c:if test="${adminLogin}">
 				<a href="/jobOpen/delete?boardNo=${basic.jobopenNo}"><button id="btnDel" type="button" class="btn btn-sm btn-primary ml-3">삭제</button></a>
 				</c:if>
