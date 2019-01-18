@@ -53,8 +53,8 @@ public class SupportBoardServiceImpl implements SupportBoardService{
 	
 	@Override
 	public List<SupportBoard> resultlist(Paging paging, Map<String, Object> param) {
-		param.put("startNo", paging.getStartNo());
-		param.put("endNo", paging.getEndNo());
+		param.put("startNo", paging.getStartNo() -1);
+		param.put("endNo", paging.getEndNo() -1);
 		param.put("curPage", paging.getCurPage());
 		return dao.resultlist(param);
 	}
