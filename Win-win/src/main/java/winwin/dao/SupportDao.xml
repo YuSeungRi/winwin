@@ -28,7 +28,25 @@
  	
  	   <select id="list" resultMap="Support" parameterType="map">
        SELECT * FROM ( SELECT @rownum:=@rownum+1 as rnum, T.* FROM(
-       <include refid="selectSupportBoard"/>
+       SELECT DISTINCT job.jobopenno, 
+                               sup.supportdate, 
+                               sup.status, 
+                               job.title, 
+                               mem.username, 
+                               mem.userid, 
+                               mem.count, 
+                               usr.task 
+               FROM   jobopenbasic job, 
+                      support sup, 
+                      member mem, 
+                      userdetail usr, 
+                      university univ, 
+                      language lang 
+               WHERE  usr.userid = mem.userid 
+                      AND usr.userid = sup.userid 
+                      AND usr.jobopenno = job.jobopenno 
+					  AND job.jobopenno = sup.jobopenno
+                      AND sup.jobopenno = #{openno}       
        ) T ORDER BY supportDate DESC ) R where (@rownum:=0)=0 limit #{startNo}, #{endNo}
     </select>
     

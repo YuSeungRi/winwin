@@ -77,6 +77,9 @@
 	var pageCount = 5; //페이지 수
 	var portId=null;
 	var userId=null;
+	
+	var openno = ${openno};
+	
 
 	$(function() {
 		supportList(page);
@@ -142,8 +145,9 @@
 			page 			: page,
 			limit 			: limit,
 			pageCount 		: pageCount,
+			openno 			: openno
 		};
-
+		
 		//ajax 호출
 		$.getJSON('/support/search', param, function(result) {
 			if (result) {

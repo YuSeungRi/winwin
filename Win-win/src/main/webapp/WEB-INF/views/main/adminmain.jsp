@@ -110,21 +110,21 @@ h6 {
 			</ul>
 		</div>
 		
-		<div class="col-4 text-center mt-2">
+		<div class="col-4 text-center mt-5">
 			<a href="/jobOpen/basicInfo"><button type="button" class="bigbutton btn font-weight-bold text-white btn-lg mt-5 mb-5" style="background: #376092;">채용공고 등록하기</button></a>
 			<a href="/notice/write"><button type="button" class="bigbutton btn btn-secondary font-weight-bold btn-lg mt-5 mb-5">공지사항 등록하기</button></a>
 			<div id="carouselExampleControls" class="carousel slide mt-2" data-ride="carousel">
 			
-			  <div class="carousel-inner">
+			  <div class="carousel-inner mt-5">
   				<c:forEach items="${supportCnt }" var="JobopenBasic" begin="0" end="0">
 			  		<div class="carousel-item active">
-				   		<div class="font-weight-bold" style="font-size: 14px;"><span style="color: #376092">${JobopenBasic.title}</span>의 지원자수</div>
+				   		<div class="font-weight-bold" style="font-size: 14px;"><span style="color: #376092">${JobopenBasic.title}</span>의 <br>지원자 수</div>
 				   		<h3 class="mt-3"><strong>${JobopenBasic.applicantCnt}</strong></h3>
 				    </div>
 				</c:forEach>
   				<c:forEach items="${supportCnt }" var="JobopenBasic" begin="1">
 				    <div class="carousel-item">
-				   		<div class="font-weight-bold" style="font-size: 14px;"><span style="color: #376092">${JobopenBasic.title}</span>의 지원자수</div>
+				   		<div class="font-weight-bold" style="font-size: 14px;"><span style="color: #376092">${JobopenBasic.title}</span>의 <br>지원자 수</div>
 				   		<h3 class="mt-3"><strong>${JobopenBasic.applicantCnt}</strong></h3>
 				    </div>
 				</c:forEach>
@@ -138,7 +138,7 @@ h6 {
 			    <span class="sr-only">Next</span>
 			  </a>
 			</div>
-			<a href="/support/list"><button type="button" class="btn btn-secondary font-weight-bold btn-sm mt-2" style="width: 300px">지원현황 바로가기</button></a>
+			<a href="/result/list"><button type="button" class="btn btn-secondary font-weight-bold btn-sm mt-2" style="width: 300px">지원결과관리 바로가기</button></a>
 		</div>
 	</div>
 	

@@ -32,12 +32,13 @@ public class SupportBoardController {
 	SupportBoardService service;
 
 	@RequestMapping(value = "/support/list", method = RequestMethod.GET)
-	public void list(Model model) {
+	public void list(Model model, @RequestParam int jobopenNo) {
 		List<JobopenBasic> title = service.getTitle();
 		/*
 		int curPage = 1;
 		model.addAttribute("curPage", curPage);
 		*/
+		model.addAttribute("openno", jobopenNo);
 		model.addAttribute("title", title);
 	}
 	
@@ -79,6 +80,9 @@ public class SupportBoardController {
 		Paging paging = service.getPaging(page, limit, pageCount, param);
 		
 		List<SupportBoard> list = service.list(paging, param);
+		
+		System.out.println("*****파람*****" + param);
+//		System.out.println("*****넘버*****" + jobopenNo);
 		
 		paging.setList(list);
 		return paging;

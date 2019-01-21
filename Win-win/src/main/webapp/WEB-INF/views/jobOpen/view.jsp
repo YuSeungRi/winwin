@@ -132,8 +132,8 @@
 								<table class="table table-striped table-bordered table-hover" style="white-space : nowrap">
 									<thead>
 										<tr>
+											<th>모집 부문</th>
 											<th>모집 부서</th>
-											<th>담당 업무</th>
 											<th>근무지</th>
 											<th>모집인원</th>
 											<th>우대사항</th>
