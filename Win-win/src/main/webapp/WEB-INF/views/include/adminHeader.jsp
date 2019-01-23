@@ -13,7 +13,7 @@
 			<a href="/admin/adminLogout"><span class="badge badge-pill badge-primary mt-3 " style="background-color: #376092">로그아웃</span></a>
 		</div>
 		
-		<p class="font-weight-bold h1"><a href="/main/adminmain" style="color:black; text-decoration: none">WIN-WIN</a></p>
+		<p style="text-decoration: none; font-size: 35px; font-weight: bold; color: grey;"><a href="/main/adminmain"><img src="/resources/image/ndCI.jpg" width="250px"/></a> Careers</p>
 		
 		<ul class="nav justify-content-end mb-2" >	
 <!-- 		  <li class="nav-item"> -->
