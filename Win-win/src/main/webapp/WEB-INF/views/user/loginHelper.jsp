@@ -80,7 +80,7 @@
 			<ul>
 				<li class="mt-3" style="line-height: 200%;">등록하신 [이름], [이메일 주소]를 입력하시면 대상자 확인 후
 									 임의의 비밀번호로 변경하여 등록하신 메일로 알려드립니다.</li>
-				<li style="line-height: 200%;">임의의 비밀번호를 이메일에서 확인하신 뒤 WIN-WIN채용 홈페이지에서 로그인하실 수 있습니다.</li>
+				<li style="line-height: 200%;">임의의 비밀번호를 이메일에서 확인하신 뒤 내담C&C채용 홈페이지에서 로그인하실 수 있습니다.</li>
 				<li style="line-height: 200%;">임의로 설정된 비밀번호는 다시 원하는 비밀번호로 변경하실 수 있습니다.</li>
 			</ul>
 			<p class="d-flex justify-content-end">
@@ -156,7 +156,7 @@
 	<div class="modal-content">
 		<div class="row">
 			<div class="col-6">
-				<span class="font-weight-bold h2 d-flex justify-content-start mt-3">WIN-WIN</span>
+				<span class="font-weight-bold h2 d-flex justify-content-start mt-3">내담C&C</span>
 			</div>
 			<div class="col-6">
 				<span class="d-flex justify-content-end mt-1"><span class="close">&times;</span></span>

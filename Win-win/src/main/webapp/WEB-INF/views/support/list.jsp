@@ -892,7 +892,7 @@ function paging (page, limit, totalCount, pageCount, callback) {
 
 		<div class="row">
 			<div class="col-6">
-				<span class="font-weight-bold h2 d-flex justify-content-start mt-3">WIN-WIN</span>
+				<span class="font-weight-bold h2 d-flex justify-content-start mt-3">내담C&C</span>
 			</div>
 			<div class="col-6">
 				<span class="d-flex justify-content-end mt-1"><span
@@ -944,7 +944,7 @@ function paging (page, limit, totalCount, pageCount, callback) {
 
 		<div class="row">
 			<div class="col-6">
-				<span class="font-weight-bold h2 d-flex justify-content-start mt-3">WIN-WIN</span>
+				<span class="font-weight-bold h2 d-flex justify-content-start mt-3">내담C&C</span>
 			</div>
 			<div class="col-6">
 				<span class="d-flex justify-content-end mt-1"><span
@@ -984,7 +984,7 @@ function paging (page, limit, totalCount, pageCount, callback) {
 
 		<div class="row">
 			<div class="col-6">
-				<span class="font-weight-bold h2 d-flex justify-content-start mt-3">WIN-WIN</span>
+				<span class="font-weight-bold h2 d-flex justify-content-start mt-3">내담C&C</span>
 			</div>
 			<div class="col-6">
 				<span class="d-flex justify-content-end mt-1"><span

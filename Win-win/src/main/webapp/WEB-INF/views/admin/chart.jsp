@@ -238,7 +238,7 @@ function drawChart1() {
                          2]);
 
         var options = {
-                title: "WIN-WIN 연령별 지원자 현황",
+                title: "연령별 지원자 현황",
                 width: 330,
                 height: 270,
     			vAxis : {maxValue : 80 },
@@ -274,7 +274,7 @@ function drawChart2() {
     ]);
 
     // Set chart options
-    var options = {'title':'WIN-WIN 학력별 지원자 현황',
+    var options = {'title':'학력별 지원자 현황',
                    'width':330,
                    'height':270,
                    	'is3D':false,
@@ -307,7 +307,7 @@ function drawChart3() {
     ]);
 
     // Set chart options
-    var options = {title:'WIN-WIN 분기별 지원자 현황',
+    var options = {title:'분기별 지원자 현황',
                    width:330,
                    height:270,
     				vAxis:{minValue:0, maxValue:200},
