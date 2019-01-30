@@ -11,7 +11,7 @@ from KH-Final project
    - Apache tomcat 9.0
 
 - Dev tool
-   - Eclipse Java Oxygen
+   - Eclipse Photon
    - Sql developer
 
 - Front-End
@@ -25,20 +25,6 @@ from KH-Final project
 - Back-End
    - Java 8
    - Spring framework 5.0.9 Release
-   - ORACLE 11g
+   - mySQL 
    - MyBatis 3
    - JSP
-
-**Contacts
-
-- Team Win-win
-- Leader : Donghyun Kim dhkim9294@gmail.com
-- Members
-   - Hyunwoo Lee
-   - Seung-ri Yu
-   - Sanggeun Han
-   - Jaehwan moon
-   - Hyunsil Heo
-   - Yeong-eun Kim
-   
-   - Special thanks to Jio Han
