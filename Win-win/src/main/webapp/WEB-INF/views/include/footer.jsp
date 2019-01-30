@@ -7,8 +7,8 @@
 <div class="row mb-3">
 <!-- 	<div class="col-6"> -->
 	<span class="font-weight-bold text-black-50 d-flex justify-content-start ml-3" style="font-size: 10px">
-		내담C&C | 2017 (주)내담C&C All right reserved. 대표전화 : 031-712-8315 | Fax : 031-789-3545 사업자등록번호 : 129-86-24627
-		<br>주소 : (본사)경기도 성남시 분당구 판교역로 231, H스퀘어 S동 711호 | (지사)서울특별시 금천구 가산동 벚꽃로 298, 대륭포스트타워 6차 612호
+		내담C&C
+		<br>주소 : (본사) 경기도 성남시 분당구 판교역로 231, H스퀘어 S동 711호 | (지사) 서울특별시 금천구 가산동 벚꽃로 298, 대륭포스트타워 6차 612호
 	</span>
 <!-- 	</div> -->
 <!-- 	<div class="col-6"> -->
