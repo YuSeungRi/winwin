@@ -133,11 +133,12 @@
 		    userDetail usr
 
 		<where>
+			usr.jobopenno = sup.jobopenno and
 			mem.userid = sup.userid and
     		job.jobopenno = sup.jobopenno and
     		usr.userid = mem.userid and
     		job.display = 1
-    		AND usr.jobopenno = sup.jobopenno
+    		
 
 			<choose>
 				<when test="pass != null and pass != '' and fail != null and fail != ''">
