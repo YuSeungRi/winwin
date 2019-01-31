@@ -37,7 +37,7 @@
 		<span class="title ml-5 mr-5 pl-3 pr-2 font-weight-bold"><a class="a" href="/notice/list">공지사항</a></span>
 		<span class="title ml-5 mr-5 pl-3 pr-2 font-weight-bold"><a class="a" href="/applyMenu/selectApply">입사지원</a></span>		
 		<span class="title ml-5 mr-5 pl-3 pr-2 font-weight-bold"><a class="a" href="/applyMenu/passfail">결과확인</a></span>
-		<span class="title ml-5 mr-5 pl-3 pr-2 font-weight-bold"><a class="a" href="/faq/faq">문의사항</a></span>
+		<span class="title ml-5 mr-5 pl-1 pr-2 font-weight-bold"><a class="a" href="/faq/faq">자주묻는질문</a></span>
 	</div>
 	
 	<hr class="mt-5" style="height:1px; width:750px; background-color: lightgray">
